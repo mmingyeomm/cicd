@@ -35,6 +35,7 @@ jobs:
         format: YYYY-MM-DDTHH-mm-ss
         utcOffset: "+09:00" # (8).build 시점의 시간확보
 
+
     - name: Show Current Time
       run: echo "CurrentTime=$"
       shell: bash # (9).확보한 시간 보여주기
@@ -61,4 +62,3 @@ jobs:
         wait_for_deployment: false
 
 
-        
