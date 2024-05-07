@@ -11,9 +11,7 @@ jobs:
     if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'develop'
 
   steps:
-    - name: Checkout
-      uses: actions/checkout@v2 # (4).코드 check out
-
+    -
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
